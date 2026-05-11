@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif;}
+        .container {max-width:1200px; margin:0 auto; padding:0 20px;}
+        header {background:#333; color:#fff; padding:15px 0;}
+        header .container {display:flex; justify-content:space-between; align-items:center;}
+        nav a {color:#fff; margin-left:20px; text-decoration:none;}
+        .contact-section {padding:60px 0; text-align:center;}
+        .contact-section h2 {font-size:28px; margin-bottom:30px; color:#333;}
+        .contact-info {font-size:18px; line-height:2;}
+        footer {background:#333; color:#fff; text-align:center; padding:20px 0; margin-top:40px;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BAKU Technology</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="product.html">Product</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>WhatsApp:</strong> +86-你的手机号</p>
+                <p><strong>Email:</strong> your-email@example.com</p>
+                <p><strong>Business Hours:</strong> Monday - Friday, 9:00 - 18:00 (GMT+8)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 BAKU Technology</p>
+        </div>
+    </footer>
+</body>
+</html>
