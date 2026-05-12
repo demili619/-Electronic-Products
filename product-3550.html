@@ -13,7 +13,6 @@
         header .container{display:flex;justify-content:space-between;align-items:center}
         nav a{color:#fff;margin-left:20px;text-decoration:none;font-size:16px}
         nav a:hover{color:#007bff}
-
         .product-wrap{display:flex;flex-wrap:wrap;padding:60px 0;gap:40px;align-items:flex-start;}
         .product-slider{flex:1;min-width:300px;position:relative;overflow:hidden;border-radius:10px;}
         .slide-item{display:none;width:100%;}
@@ -21,14 +20,12 @@
         .prev,.next{position:absolute;top:50%;transform:translateY(-50%);background:#00000066;color:white;padding:12px 16px;font-size:20px;border:none;cursor:pointer;}
         .prev{left:10px;}
         .next{right:10px;}
-
         .product-info{flex:1;min-width:300px;}
         .product-info h2{font-size:32px;margin-bottom:20px}
         .product-info p{font-size:16px;line-height:1.7;color:#333;margin-bottom:12px}
         table{width:100%;border-collapse:collapse;margin-top:25px}
         td{border:1px solid #ddd;padding:12px;font-size:15px}
         .btn{background:#007bff;color:#fff;padding:14px 25px;border-radius:6px;text-decoration:none;display:inline-block;margin-top:25px}
-
         footer{background:#222;color:#fff;text-align:center;padding:30px 0;margin-top:40px}
     </style>
 </head>
@@ -49,12 +46,11 @@
 <div class="container">
     <div class="product-wrap">
         <div class="product-slider">
-            <div class="slide-item" style="display:block;">
-                <img src="images/3550-1.jpg" alt="BAKU BK-3550 Ultrasonic Cleaner">
-            </div>
-            <div class="slide-item">
-                <img src="images/3550-2.jpg" alt="BAKU BK-3550 Ultrasonic Cleaner">
-            </div>
+            <div class="slide-item" style="display:block;"><img src="images/bk3550-1.jpg"></div>
+            <div class="slide-item"><img src="images/bk3550-2.jpg"></div>
+            <div class="slide-item"><img src="images/bk3550-3.jpg"></div>
+            <div class="slide-item"><img src="images/bk3550-4.jpg"></div>
+            <div class="slide-item"><img src="images/bk3550-5.jpg"></div>
             <button class="prev" onclick="changeSlide(-1)">❮</button>
             <button class="next" onclick="changeSlide(1)">❯</button>
         </div>
