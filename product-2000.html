@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="BAKU BK-2000 ultrasonic cleaner, 3.2L multi-function ultrasonic cleaner, repair tools hardware cleaner">
-    <meta name="description" content="BAKU BK-2000 3.2L multi-function ultrasonic cleaner for mobile repair tools, hardware parts, jewelry and daily accessories cleaning.">
+    <meta name="description" content="BAKU BK-2000 3.2L multi-function ultrasonic cleaner for mobile repair tools, hardware parts, jewelry cleaning.">
     <title>BAKU BK-2000 Ultrasonic Cleaner | Wholesale</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
@@ -13,7 +13,6 @@
         header .container{display:flex;justify-content:space-between;align-items:center}
         nav a{color:#fff;margin-left:20px;text-decoration:none;font-size:16px}
         nav a:hover{color:#007bff}
-
         .product-wrap{display:flex;flex-wrap:wrap;padding:60px 0;gap:40px;align-items:flex-start;}
         .product-slider{flex:1;min-width:300px;position:relative;overflow:hidden;border-radius:10px;}
         .slide-item{display:none;width:100%;}
@@ -21,14 +20,12 @@
         .prev,.next{position:absolute;top:50%;transform:translateY(-50%);background:#00000066;color:white;padding:12px 16px;font-size:20px;border:none;cursor:pointer;}
         .prev{left:10px;}
         .next{right:10px;}
-
         .product-info{flex:1;min-width:300px;}
         .product-info h2{font-size:32px;margin-bottom:20px}
         .product-info p{font-size:16px;line-height:1.7;color:#333;margin-bottom:12px}
         table{width:100%;border-collapse:collapse;margin-top:25px}
         td{border:1px solid #ddd;padding:12px;font-size:15px}
         .btn{background:#007bff;color:#fff;padding:14px 25px;border-radius:6px;text-decoration:none;display:inline-block;margin-top:25px}
-
         footer{background:#222;color:#fff;text-align:center;padding:30px 0;margin-top:40px}
     </style>
 </head>
@@ -45,50 +42,33 @@
         </nav>
     </div>
 </header>
-
 <div class="container">
     <div class="product-wrap">
         <div class="product-slider">
-            <div class="slide-item" style="display:block;">
-                <img src="images/2000-1.jpg" alt="BAKU BK-2000 Ultrasonic Cleaner">
-            </div>
+            <div class="slide-item" style="display:block;"><img src="images/bk2000-1.jpg"></div>
+            <div class="slide-item"><img src="images/bk2000-2.jpg"></div>
+            <div class="slide-item"><img src="images/bk2000-3.jpg"></div>
+            <div class="slide-item"><img src="images/bk2000-4.jpg"></div>
+            <div class="slide-item"><img src="images/bk2000-5.jpg"></div>
             <button class="prev" onclick="changeSlide(-1)">❮</button>
             <button class="next" onclick="changeSlide(1)">❯</button>
         </div>
-
         <div class="product-info">
             <h2>BAKU BK-2000 Ultrasonic Cleaner</h2>
-            <p>BK-2000 is a 3.2L multi-function ultrasonic cleaner with large tank capacity, suitable for mobile repair tools, hardware accessories, watch parts and daily items deep cleaning.</p>
-            <p>High power ultrasonic vibration removes oil, dust and oxide efficiently, ideal for repair shop daily use and wholesale distribution.</p>
+            <p>3.2L large tank multi-function ultrasonic cleaner, ideal for mobile repair tools, hardware and precision parts cleaning.</p>
             <table>
                 <tr><td>Model</td><td>BK-2000</td></tr>
                 <tr><td>Capacity</td><td>3.2L</td></tr>
                 <tr><td>Frequency</td><td>40KHz</td></tr>
-                <tr><td>Tank Material</td><td>304 Stainless Steel</td></tr>
-                <tr><td>Voltage</td><td>110V / 220V</td></tr>
-                <tr><td>Application</td><td>Repair Tools, Hardware, Watch Parts</td></tr>
+                <tr><td>Tank</td><td>304 Stainless Steel</td></tr>
             </table>
             <a href="contact.html" class="btn">Get Wholesale Price</a>
         </div>
     </div>
 </div>
-
 <footer>
-    <div class="container">
-        <p>© 2026 BAKU | Global Supplier of Mobile Repair Tools & Mobile Accessories | WhatsApp: +86-17306665509 | Email: demili619@hotmail.com</p>
-    </div>
+    <p>© 2026 BAKU | Global Mobile Repair Tools & Accessories Supplier</p>
 </footer>
-
-<script>
-let slideIndex = 1;
-function changeSlide(n){
-    let slides = document.getElementsByClassName("slide-item");
-    slideIndex += n;
-    if(slideIndex > slides.length) slideIndex = 1;
-    if(slideIndex < 1) slideIndex = slides.length;
-    for(let i=0;i<slides.length;i++) slides[i].style.display = "none";
-    slides[slideIndex-1].style.display = "block";
-}
-</script>
+<script>let slideIndex=1;function changeSlide(n){let slides=document.getElementsByClassName("slide-item");slideIndex+=n;if(slideIndex>slides.length)slideIndex=1;if(slideIndex<1)slideIndex=slides.length;for(let i=0;i<slides.length;i++)slides[i].style.display="none";slides[slideIndex-1].style.display="block";}</script>
 </body>
 </html>
