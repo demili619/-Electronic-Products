@@ -13,7 +13,6 @@
         header .container{display:flex;justify-content:space-between;align-items:center}
         nav a{color:#fff;margin-left:20px;text-decoration:none;font-size:16px}
         nav a:hover{color:#007bff}
-
         .product-wrap{display:flex;flex-wrap:wrap;padding:60px 0;gap:40px;align-items:flex-start;}
         .product-slider{flex:1;min-width:300px;position:relative;overflow:hidden;border-radius:10px;}
         .slide-item{display:none;width:100%;}
@@ -21,14 +20,12 @@
         .prev,.next{position:absolute;top:50%;transform:translateY(-50%);background:#00000066;color:white;padding:12px 16px;font-size:20px;border:none;cursor:pointer;}
         .prev{left:10px;}
         .next{right:10px;}
-
         .product-info{flex:1;min-width:300px;}
         .product-info h2{font-size:32px;margin-bottom:20px}
         .product-info p{font-size:16px;line-height:1.7;color:#333;margin-bottom:12px}
         table{width:100%;border-collapse:collapse;margin-top:25px}
         td{border:1px solid #ddd;padding:12px;font-size:15px}
         .btn{background:#007bff;color:#fff;padding:14px 25px;border-radius:6px;text-decoration:none;display:inline-block;margin-top:25px}
-
         footer{background:#222;color:#fff;text-align:center;padding:30px 0;margin-top:40px}
     </style>
 </head>
@@ -45,50 +42,33 @@
         </nav>
     </div>
 </header>
-
 <div class="container">
     <div class="product-wrap">
         <div class="product-slider">
-            <div class="slide-item" style="display:block;">
-                <img src="images/3060-1.jpg" alt="BAKU BA-3060 Ultrasonic Cleaner">
-            </div>
+            <div class="slide-item" style="display:block;"><img src="images/ba3060-1.jpg"></div>
+            <div class="slide-item"><img src="images/ba3060-2.jpg"></div>
+            <div class="slide-item"><img src="images/ba3060-3.jpg"></div>
+            <div class="slide-item"><img src="images/ba3060-4.jpg"></div>
+            <div class="slide-item"><img src="images/ba3060-5.jpg"></div>
             <button class="prev" onclick="changeSlide(-1)">❮</button>
             <button class="next" onclick="changeSlide(1)">❯</button>
         </div>
-
         <div class="product-info">
             <h2>BAKU BA-3060 Mini Ultrasonic Cleaner</h2>
             <p>BAKU BA-3060 is a 0.6L compact mini ultrasonic cleaner, simple button control, small size easy to store and carry.</p>
-            <p>Perfect for family daily cleaning and promotional gift wholesale, cleaning glasses, jewelry, watches and small accessories quickly.</p>
             <table>
                 <tr><td>Model</td><td>BA-3060</td></tr>
                 <tr><td>Capacity</td><td>0.6L</td></tr>
                 <tr><td>Frequency</td><td>40KHz</td></tr>
                 <tr><td>Tank</td><td>304 Stainless Steel</td></tr>
-                <tr><td>Feature</td><td>Compact Mini Size</td></tr>
-                <tr><td>Application</td><td>Home Use, Gift, Daily Small Items</td></tr>
             </table>
             <a href="contact.html" class="btn">Get Wholesale Price</a>
         </div>
     </div>
 </div>
-
 <footer>
-    <div class="container">
-        <p>© 2026 BAKU | Global Supplier of Mobile Repair Tools & Mobile Accessories | WhatsApp: +86-17306665509 | Email: demili619@hotmail.com</p>
-    </div>
+    <p>© 2026 BAKU | Global Mobile Repair Tools & Accessories Supplier</p>
 </footer>
-
-<script>
-let slideIndex = 1;
-function changeSlide(n){
-    let slides = document.getElementsByClassName("slide-item");
-    slideIndex += n;
-    if(slideIndex > slides.length) slideIndex = 1;
-    if(slideIndex < 1) slideIndex = slides.length;
-    for(let i=0;i<slides.length;i++) slides[i].style.display = "none";
-    slides[slideIndex-1].style.display = "block";
-}
-</script>
+<script>let slideIndex=1;function changeSlide(n){let slides=document.getElementsByClassName("slide-item");slideIndex+=n;if(slideIndex>slides.length)slideIndex=1;if(slideIndex<1)slideIndex=slides.length;for(let i=0;i<slides.length;i++)slides[i].style.display="none";slides[slideIndex-1].style.display="block";}</script>
 </body>
 </html>
