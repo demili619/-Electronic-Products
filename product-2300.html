@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="BAKU BK-2300, 0.6L ultrasonic cleaner, 28W ultrasonic cleaner with degas function">
-    <meta name="description" content="BAKU BK-2300 0.6L 28W ultrasonic cleaner with degas function, ideal for jewelry, glasses and watches cleaning.">
+    <meta name="keywords" content="BAKU BK-2300 ultrasonic cleaner, 0.6L mini ultrasonic cleaner with degas, jewelry glasses watch cleaner">
+    <meta name="description" content="BAKU BK-2300 0.6L portable ultrasonic cleaner with degas function, ideal for jewelry, glasses, watch and small repair parts deep cleaning.">
     <title>BAKU BK-2300 Ultrasonic Cleaner | Wholesale</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
         .container{max-width:1200px;margin:0 auto;padding:0 20px}
         header{background:#222;color:#fff;padding:20px 0}
         header .container{display:flex;justify-content:space-between;align-items:center}
-        nav a{color:#fff;margin-left:25px;text-decoration:none;font-size:16px}
-        .product{padding:70px 0}
-        .product-img {width:100%;text-align:center;margin-bottom:30px;}
-        .product-img img {width:48%;height:auto;margin:5px;border-radius:10px;display:inline-block;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-        .product-info{width:100%}
+        nav a{color:#fff;margin-left:20px;text-decoration:none;font-size:16px}
+        nav a:hover{color:#007bff}
+
+        .product-wrap{display:flex;flex-wrap:wrap;padding:60px 0;gap:40px;align-items:flex-start;}
+        .product-slider{flex:1;min-width:300px;position:relative;overflow:hidden;border-radius:10px;}
+        .slide-item{display:none;width:100%;}
+        .slide-item img{width:100%;border-radius:10px;}
+        .prev,.next{position:absolute;top:50%;transform:translateY(-50%);background:#00000066;color:white;padding:12px 16px;font-size:20px;border:none;cursor:pointer;}
+        .prev{left:10px;}
+        .next{right:10px;}
+
+        .product-info{flex:1;min-width:300px;}
         .product-info h2{font-size:32px;margin-bottom:20px}
         .product-info p{font-size:16px;line-height:1.7;color:#333;margin-bottom:12px}
         table{width:100%;border-collapse:collapse;margin-top:25px}
         td{border:1px solid #ddd;padding:12px;font-size:15px}
         .btn{background:#007bff;color:#fff;padding:14px 25px;border-radius:6px;text-decoration:none;display:inline-block;margin-top:25px}
+
         footer{background:#222;color:#fff;text-align:center;padding:30px 0;margin-top:40px}
     </style>
 </head>
@@ -30,37 +38,58 @@
         <h1>BAKU Official</h1>
         <nav>
             <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="why-choose-us.html">Why Choose Us</a>
             <a href="contact.html">Contact</a>
         </nav>
     </div>
 </header>
-<section class="product">
-    <div class="container">
-        <div class="product-img">
-            <img src="images/2300-1.jpg" alt="BAKU BK-2300 Ultrasonic Cleaner">
+
+<div class="container">
+    <div class="product-wrap">
+        <div class="product-slider">
+            <div class="slide-item" style="display:block;">
+                <img src="images/2300-1.jpg" alt="BAKU BK-2300 Ultrasonic Cleaner">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
         </div>
+
         <div class="product-info">
             <h2>BAKU BK-2300 Ultrasonic Cleaner</h2>
-            <p>The BAKU BK-2300 is a compact 0.6L 28W ultrasonic cleaner with a degas function, designed for efficient cleaning of jewelry, glasses, watches, and small items.</p>
-            <p>It features a fingerprint-proof, anti-skid design and a 304 stainless steel tank for durability. The one-piece formed liner ensures no leakage and long service life.</p>
+            <p>BK-2300 is a compact 0.6L mini ultrasonic cleaner built with degas function. It removes air bubbles inside the liquid for deeper and more thorough cleaning effect.</p>
+            <p>Lightweight portable design, perfect for cleaning jewelry, glasses, watches, razor blades and mobile phone tiny repair parts.</p>
             <table>
                 <tr><td>Model</td><td>BK-2300</td></tr>
-                <tr><td>Power</td><td>28W</td></tr>
                 <tr><td>Capacity</td><td>0.6L</td></tr>
-                <tr><td>Frequency</td><td>40-45KHz</td></tr>
-                <tr><td>Material</td><td>Stainless Steel</td></tr>
-                <tr><td>Voltage</td><td>110V/220V</td></tr>
-                <tr><td>Weight</td><td>0.56kg</td></tr>
-                <tr><td>Application</td><td>Jewelry, Glasses, Watches, Dental Tools, Tableware</td></tr>
+                <tr><td>Power</td><td>28W</td></tr>
+                <tr><td>Frequency</td><td>40KHz</td></tr>
+                <tr><td>Feature</td><td>With Degas Function</td></tr>
+                <tr><td>Tank</td><td>304 Stainless Steel</td></tr>
+                <tr><td>Application</td><td>Jewelry, Glasses, Watch, Small Repair Parts</td></tr>
             </table>
             <a href="contact.html" class="btn">Get Wholesale Price</a>
         </div>
     </div>
-</section>
+</div>
+
 <footer>
     <div class="container">
-        <p>© 2026 BAKU Repair Tools | China Ultrasonic Cleaner Supplier | WhatsApp: +86-17306665509 | Email: demili619@hotmail.com</p>
+        <p>© 2026 BAKU | Global Supplier of Mobile Repair Tools & Mobile Accessories | WhatsApp: +86-17306665509 | Email: demili619@hotmail.com</p>
     </div>
 </footer>
+
+<script>
+let slideIndex = 1;
+function changeSlide(n){
+    let slides = document.getElementsByClassName("slide-item");
+    slideIndex += n;
+    if(slideIndex > slides.length) slideIndex = 1;
+    if(slideIndex < 1) slideIndex = slides.length;
+    for(let i=0;i<slides.length;i++) slides[i].style.display = "none";
+    slides[slideIndex-1].style.display = "block";
+}
+</script>
 </body>
 </html>
